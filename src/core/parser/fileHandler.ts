@@ -1,0 +1,1 @@
+//Responsável por ler/escrever no disco.

@@ -1,0 +1,91 @@
+// FileProvider e MarkdownParser
+- [X] define pasta de nome <nome> como pasta de procura
+    - [X] Verifica se há configuração
+        - [X] configura
+- [X] Printa na tela qual é a pasta configurada se quiser
+    - [X] menu básico de ações
+- [X] mostra lista de pasta de exercícios
+    - [X] Fazer ele reconhecer configuração
+- [X] Conta quantos arquivos tem
+- [] Conta quantos exercícios tem
+- [] Conta quantos links tem
+- [X] Conta quantos arquivos em cada padrão
+- [X] Verifica se tem arquivos em padrão nenhum 🌟
+    - [X] Reconhece padrões
+- [] Fazer MarkdownParser de acordo com padrões 🌟
+    - [X] Fazer identificador de padrão (recebe arquivo e retorna padrão para exercícios)
+        - [X] Fazer modelagem de dados
+            - [X] De acordo com requisitos
+            - [:b] Verificar normalização
+            - [:b] Verificar tipo de dados
+        - [X] Fazer documentValidator retornar as funções
+    - [] Fazer identificador de padrão para todos os tipos de documento
+- [] Fazer um limpador de texto
+- [X] Verifca se há padrões inconsistentes (detectados por mais de um padrão)
+
+// IndexStore
+- [X] Verifica se há novos exercícios 🌟
+    - [X] Verificar se há títulos repetidos nas questões
+    - [X] Fazer criador de banco de dados
+        - [X] Fazer verificador do estado atual do banco de dados
+            - [X] printar ddl
+            - [X] printar dml
+- [X] Coloca novos exercícios 🌟
+    - [X] Permitir colocar exercícios
+        - [X] Avisar se falhar e parar
+
+// SearchService
+- [] Mostra quantos exercícios tem no banco
+- [] Ver quantas questões já respondi de uma disciplina
+- [] Ver quantas questões já respondi de um conteúdo
+- [] Ver quantos capítulos tem em um conteúdo
+- [] Ver quantas questões tem de uma disciplina 🌟
+    - [] Cadastra disciplinas
+        - [X] Cadastra livros
+            - [X] Fazer identifcador de padrão que retorna dados
+                - [X] Retornar todos os livros reconhecidos
+            - [X] cria banco de livros
+            - [X] coloca um livro
+                    - [] detecta se algum não existe
+        - [X] Fazer modelagem de disciplina
+        - [X] Fazer Tabela no banco de dados
+        - [X] Fazer pergunta por livro
+            - [] Acertar a ordem de adição
+                - [X] Verifica se tem livros novos
+                - [] Expulsa títulos ruins
+                - [X] Adiciona livros
+                    - [X] Adicionar com cautela
+            - [] Resgata os livros do banck
+- [] Ver quantas questões tem de um conteúdo 🌟
+    - [] Cadastra conteúdos
+        - [X] Cadastra capítulos
+            - [X] Fazer identifcador de padrão que retorna dados
+            - [X] Cria banco de dados
+            - [X] coloca um capítulo
+                - [] detecta se algum não existe
+        - [X] Fazer modelagem de disciplina
+        - [X] Fazer Tabela no banco de dados
+        - [] Fazer pergunta por capítulo
+                - [] Verifica se tem capítulos novos
+                - [] Adiciona capítulos
+- [] Ver quantas questões tem de um capítulo 
+- [] Exporta questões de um conteúdo 🌟
+    - [] Seleciona questões aleatórias
+    - [] Seleciona questões por rank de prioridade
+        - [] Faz rank de prioridade
+- [] Exporta questões de uma disciplina 🌟
+- [] Exporta questões de um um capítulo 🌟
+- [] Fazer preenchedor de area, conteúdo e disciplina
+
+//software
+- [] Fazer suite de testes inicial
+- [] Organizar menu do cli
+- [] Unificar regex e testar regex
+- [] Fazer config de aprovação de lista
+
+// Futuro
+- [] Rank de questões no capítulo, no livro, no conteúdo e etc.
+- [] Avaliação pessoal de se questão consegue resumir o conteúdo
+- [] Lista de pontos importantes do conteúdo
+- [] Nota naquele conteúdo em uma prova
+- [] Nota naquele conteúdo em x provas
